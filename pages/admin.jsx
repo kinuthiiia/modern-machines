@@ -150,6 +150,7 @@ export default function Admin() {
         <div className="w-full grid grid-cols-4 gap-6">
           {images.map((image, i) => (
             <div
+              key={i}
               className={i == 0 ? `col-span-2 relative` : `col-span-1 relative`}
             >
               <img src={image} />
